@@ -1,1 +1,1 @@
-{"name":"adorereve-wedding-planner","version":"1.0.0","private":true,"scripts":{"start":"node server.cjs","check":"node --check dist/app.js && node --check dist/config.js && node --check server.cjs"}}
+{"name":"adorereve-wedding-planner","version":"1.0.0","private":true,"scripts":{"start":"node server.cjs","check":"node --check dist/app.js && node --check dist/config.js && node --check dist/integrations.js && node --check src/connect.cjs && node --check server.cjs","test":"node --test"},"dependencies":{"@pipedream/sdk":"^3.1.6"}}
