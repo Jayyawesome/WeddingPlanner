@@ -1,6 +1,6 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
-const { createServer } = require('../server.cjs');
+const { createServer } = require('../src/server.cjs');
 const env = { PIPEDREAM_CLIENT_ID: 'test-client', PIPEDREAM_CLIENT_SECRET: 'test-secret', CONNECT_ADMIN_PASSWORD: 'test-password-with-at-least-24-characters', APP_ORIGIN: 'https://adorereve.com' };
 const headers = { Authorization: `Basic ${Buffer.from('admin:'+env.CONNECT_ADMIN_PASSWORD).toString('base64')}`, Origin: env.APP_ORIGIN, 'Content-Type': 'application/json' };
 async function fixture(t, options={}) {
